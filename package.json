@@ -1,0 +1,21 @@
+{
+  "name": "test-run",
+  "version": "1.0.0",
+  "description": "test js runner",
+  "main": "index.js",
+  "scripts": {
+    "init": "npm ci",
+    "prettier": "npx prettier --check ./**/*.js",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
